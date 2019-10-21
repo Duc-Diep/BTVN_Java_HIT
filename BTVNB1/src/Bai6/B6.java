@@ -17,4 +17,5 @@ public class B6 {
 		System.out.println("Tổng của 2 số thực n2+m2 là: " + (n2 + m2));
 		System.out.println("Tổng của n1+n2 là : " + (n1 + n2));
 	}
+
 }
