@@ -2,7 +2,7 @@ package Bai1;
 
 import java.util.Scanner;
 
-public class Club {
+public class RunMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

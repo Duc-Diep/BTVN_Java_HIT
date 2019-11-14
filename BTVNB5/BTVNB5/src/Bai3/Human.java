@@ -7,38 +7,19 @@ public class Human {
 	private int HP=100;
 	private int dame;
 	
+	public Human() {
+		super();
+	}
+
+	public Human(String name, int hP, int dame) {
+		super();
+		this.name = name;
+		HP = hP;
+		this.dame = dame;
+	}
+
 	public void Attack(Human x) {
-		int count=0;
-		Random rd = new Random();
-		dame =5+rd.nextInt(15);
-		x.dame=5+rd.nextInt(10);
-		System.out.println(name+": [dame="+dame+",HP="+HP+"]");
-		System.out.println(x.getName()+": [dame="+x.getDame()+",HP="+x.getHP()+"]");
-			for(int i=1;i<=4&&x.getHP()>0;i++) {
-				x.setHP(x.getHP()-dame);
-				count++;
-				System.out.println();
-				System.out.println("\t-----Lượt đánh thứ "+count+"-----");
-				System.out.print("\t   "+name + ": "+HP +"HP vs ");
-				System.out.println(x.name + ": "+x.getHP() +"HP");
-			}
-			for(int i=1;i<=5&&HP>0;i++) {
-				HP-=x.dame;
-				count++;
-				System.out.println();
-				System.out.println("\t-----Lượt đánh thứ "+count+"-----");
-				System.out.print("\t   "+name + ": "+HP +"HP vs ");
-				System.out.println(x.name + ": "+x.getHP() +"HP");
-			}
-		
-		if(HP>x.getHP()) {
-			System.out.println(name+" thắng");
-			return;
-		}
-		else {
-			System.out.println(x.getName()+" thắng");
-			return;
-		}
+		x.setHP(x.getHP()-dame);
 	}
 	
 	public String getName() {
@@ -64,6 +45,13 @@ public class Human {
 	public void setDame(int dame) {
 		this.dame = dame;
 	}
-
-	
+	public boolean CanContinousToFight() {
+		if(HP>0) {
+			return true;
+		}
+		return false;
+	}
+	public void ShowInfo() {
+		System.out.print("\t   "+name + ": "+HP +"HP  ");
+	}
 }
