@@ -6,7 +6,7 @@ public class Archers {
 	private int MP=90;
 	private int armor=10;
 	public void hit(Monster x) {
-	x.setHP(x.getHP()-(30-x.getArmor()));;
+	x.setHP(x.getHP()-(30-x.getArmor()));
 	}
 	public void aim(Monster x) {
 		this.MP-=30;

@@ -11,7 +11,6 @@ public class RunMain {
 		c[3] = new Member("Linh", 60, 0);
 		Leader a = new Leader("Anh Sơn", 23, 60);
 		Support b = new Support("Anh Tú", 23, c);
-		
 		Club HIT = new Club(a, b, c);
 		HIT.ShowInfo();
 	}
