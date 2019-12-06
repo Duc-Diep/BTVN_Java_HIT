@@ -55,6 +55,7 @@ public class PhoneBook extends CustomerPhone {
 			for (CustomerPhone x : searchlist) {
 				x.ShowInfo();
 			}
+			searchlist.clear();
 		}
 	}
 

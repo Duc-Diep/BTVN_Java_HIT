@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		phonebook.AddCustomerPhone(new CustomerPhone("Doan", 20, "01274629523"));
-		phonebook.AddCustomerPhone(new CustomerPhone("Khánh", 21, "01274729523"));
+		phonebook.AddCustomerPhone(new CustomerPhone("Khánh", 19, "01274729523"));
 		phonebook.AddCustomerPhone(new CustomerPhone("Linh", 20, "01486739523"));
 		phonebook.AddCustomerPhone(new CustomerPhone("Điệp", 20, "01228609523"));
 		int choice;
